@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url uri("$rootDir/repo")
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+
+        classpath "com.dj.plugin:asmPlugin:0.0.1"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+//此处与com.dj.asmPlugin.properties要同名
+//apply plugin:'com.dj.asm.plugin'
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
