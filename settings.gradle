@@ -1,3 +1,5 @@
+include ':dotPluginAnnotation'
+include ':dotPlugin'
 include ':asmPlugin'
 include ':app'
 rootProject.name = "ASMPlugin"

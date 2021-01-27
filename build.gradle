@@ -11,6 +11,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:4.1.1"
 
         classpath "com.dj.plugin:asmPlugin:0.0.1"
+        classpath "com.dj.plugin:dotPlugin:0.0.1"
     }
 }
 
