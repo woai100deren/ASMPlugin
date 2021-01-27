@@ -111,6 +111,16 @@ plugins {
 ......
 ```
 
+七、使用`@DotAnnotation`注解，实现埋点统计
 
+```java
+findViewById(R.id.textView).setOnClickListener(new View.OnClickListener() {
+    @DotAnnotation("textView click")
+    @Override
+    public void onClick(View v) {
+        Log.e("123","456");
+    }
+});
+```
 
 具体的代码细节请查看源码。
